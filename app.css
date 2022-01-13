@@ -1,0 +1,24 @@
+/* add root with background color #333  and font size 62.5% */
+body {
+  background-color: #333333;
+  font-size: 62.5%;
+}
+/* add universal that has box-sizing: border-box, font-family; arial, helveltica, sans-serif, margin: 0; padding: 0 and color #ecf5ft */
+* {
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ecf5ff;
+}
+/* make h1 thru h4 have margin-bottom relative to root's font-size */
+h1, h2, h3, h4 {
+  margin-bottom: 1.5rem;
+}
+/* add style to h1: font size 5.4rem, color light blue, bottom margin 5rem */
+h1 {
+  font-size: 5.4rem;
+  color: #56a5eb;
+  margin-bottom: 5rem;
+}
+
