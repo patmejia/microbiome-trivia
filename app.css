@@ -1,29 +1,53 @@
-/* add root with background color #333  and font size 62.5% */
-body {
-  background-color: #333333;
-  font-size: 62.5%;
+/* add style to `:root` that is background color #ecf5ff  and font size 62.5% */
+:root {
+  --bg-color: #ecf5ff;
+  --font-size: 62.5%;
 }
-/* add universal that has box-sizing: border-box, font-family; arial, helveltica, sans-serif, margin: 0; padding: 0 and color #ecf5ft */
+/* add universal that has box-sizing: border-box, font-family; arial, helveltica, sans-serif, margin: 0; padding: 0 and color #333 */
 * {
   box-sizing: border-box;
   font-family: arial, helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  color: #ecf5ff;
+  color: #333;
 }
 /* make h1 thru h4 have margin-bottom relative to root's font-size */
 h1, h2, h3, h4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 /* add style to h1: font size 5.4rem, color light blue, bottom margin 5rem */
 h1 {
   font-size: 5.4rem;
-  color: #56a5eb;
+  color: #56a5eb;   /*  copilot miss  */              
   margin-bottom: 5rem;
 }
-/* add h1 > span that has font-size 2.4rem and font-weight 500 */
-h1 span {
+/* add span element to h1 that has font-size 2.4rem and font-weight 500 */
+h1 > span {         /*  had to added `>`  */                 
   font-size: 2.4rem;
   font-weight: 500;
+}
+/* add h2 that has font-size 4.2rem, margin bottom 4rem, font weight 700 */
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+/* add h3 that has font-size 2.8rem, font weight 500 */
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* Utilities */
+/* add a container: width 100vw, height 100vh, that has display flex, justify-content: center, align-items: center, max width 80rem, amrgin 0 auto, padding 2rem, */
+.container {
+  width: 100vw; /*  copilot miss  */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
