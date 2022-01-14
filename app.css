@@ -21,4 +21,9 @@ h1 {
   color: #56a5eb;
   margin-bottom: 5rem;
 }
+/* add h1 > span that has font-size 2.4rem and font-weight 500 */
+h1 span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
 
