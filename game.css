@@ -1,0 +1,86 @@
+/* for choice-container use: display: flex; margin-bottom: 0.5rem; width 100%; font-size: 1.8rem; border 0.1rem, solid, rgb(86, 165, 23,5 0.25); */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 23, 0.25);
+}
+/* for .choice-container:hover use cursor pointer, bax-shadow 0 0.4rem 1.4rem 0 rgb(86, 185, 235, 0.5), trnasform translateY(-0.1rem), transitions transform 150ms */
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+/* for choise-prefix use: padding 1.5rem 2.5rem;  background-color #56a5eb; color white  */
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+/* for choice-text use: padding 1.5rem; width 100%  */
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+/* for correct use background-color #28a745; */
+.correct {
+  background-color: #28a745;
+}
+/* for incorrect use background-color #dc3545; */
+.incorrect {
+  background-color: #dc3545;
+}
+
+
+/* HUD */
+
+/* for hud use: display flex, justify-content space-between,  */
+.hud {
+  display: flex;
+  justify-content: space-between;
+}
+/* for hud-prefix use: text align center, font size 2rem */
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+/* for hud-main-text use text align center */
+.hud-main-text {
+  text-align: center;
+}
+/* for progressBar use: width 20rem, height 4rem, morder .3rem solid #56a5eb, margin top 1.5rem */
+.progressBar {  
+  width: 20rem;
+  height: 4rem;
+  margin: .3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}   
+/* for progressBarFull use: width 0%, height 3.4rem, background-color #56a5eb */
+.progressBarFull {  /* make progressBarFull width 0% */
+  width: 0%;
+  height: 3.4rem;
+  background-color: #56a5eb;
+}
+
+
+/* Loader */
+/* for loader use: border 1.6rem solid white, border radius 50%, border top 1.6rem solid #56a5eb, width 12rem, height 12rem, animation spin 2s linear infinite */
+.loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+/* add @keyframes spin from 0% to 100% */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
