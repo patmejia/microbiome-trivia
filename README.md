@@ -20,6 +20,11 @@ Definition and Usage
 
 `vh` stands for **viewport height** and `vw` is for **viewport width**. Hence, setting an element to a width value of `50vw` means that the element will have a
 $$
-\mathtt{width.of.object = 50\%*(size.of.viewport)}
+width.of.object = 50\%*(size.of.viewport)
 $$
 This stays true when the viewport is resized.
+
+## HUD: Heads-Up Display
+
+What is a HUD element?
+> HUD elements could include a mini-map in the corner, a health bar, and a variety of other items to aid the player. The HUD is there to present the player with important information while not being distracting. A great example of a heads up display is in the Halo series.
