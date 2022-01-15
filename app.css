@@ -77,4 +77,29 @@ h3 {
   display: none;
 }   
 
-
+/* Button  */
+/* add btn that has font size 1.8rem, padding 1rem 0, width 20rem, text align center, border 0.1rem soid #56a5eb, margin bottom 1rem, text decoration none, color #56a5eb, and background color white */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+}
+/* add hover btn that has cursor pointer, box shadow 0 0.4rm 1.4rem 0 rgba(86, 185, 235, 0.5), transform translateY(-0.1rem), and transition transform 15ms. */
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 15ms;
+}
+/* add when button is disabled then hover that has cursor not allowed, box-shadow none, transform none.  */
+.btn[disabled]:hover {    /* had to add `[]`*/
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}

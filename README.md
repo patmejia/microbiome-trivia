@@ -20,9 +20,6 @@ Definition and Usage
 
 `vh` stands for **viewport height** and `vw` is for **viewport width**. Hence, setting an element to a width value of `50vw` means that the element will have a
 $$
-\begin{equation}
-\mathtt{width.of.object = 50\%*[size.of.viewport]}
-\end{equation}
+\mathtt{width.of.object = 50\%*(size.of.viewport)}
 $$
-<br>
 This stays true when the viewport is resized.
