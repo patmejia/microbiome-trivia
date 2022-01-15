@@ -22,3 +22,5 @@ Definition and Usage
 $\mathtt{width = 50\%*(the-viewport-size)}$
 <br>
 This stays true when the viewport is resized.
+
+

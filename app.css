@@ -50,4 +50,31 @@ h3 {
   margin: 0 auto;
   padding: 2rem;
 }
+/* add a container > * with width 100% */
+.container > *  {        /* styles any child of container */
+  width: 100%;
+}   
+/* add a flex column that has display flex and flex direction column */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* add flex center that has justify-content: center, align-items: center */
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+/* add justify center that has justify-content: center */
+.justify-center {
+  justify-content: center;
+}
+/* add text center that is text align center  */
+.text-center {
+  text-align: center;
+}
+/* add hidden that has display: none  */
+.hidden {
+  display: none;
+}   
+
 
