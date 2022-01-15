@@ -39,6 +39,7 @@ h3 {
 }
 
 /* Utilities */
+/*
 /* add a container: width 100vw, height 100vh, that has display flex, justify-content: center, align-items: center, max width 80rem, amrgin 0 auto, padding 2rem, */
 .container {
   width: 100vw; /*  copilot miss  */
@@ -78,6 +79,7 @@ h3 {
 }   
 
 /* Button  */
+/*
 /* add btn that has font size 1.8rem, padding 1rem 0, width 20rem, text align center, border 0.1rem soid #56a5eb, margin bottom 1rem, text decoration none, color #56a5eb, and background color white */
 .btn {
   font-size: 1.8rem;
@@ -90,12 +92,13 @@ h3 {
   color: #56a5eb;
   background-color: white;
 }
+/* adds hover effects to btn */
 /* add hover btn that has cursor pointer, box shadow 0 0.4rm 1.4rem 0 rgba(86, 185, 235, 0.5), transform translateY(-0.1rem), and transition transform 15ms. */
 .btn:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 15ms;
+  cursor: pointer;  /* cursor will be a pointer when hovering over the button */
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5); /* adds a drop shadow to the button when hovering over it with transparent 0.5 opacity */
+  transform: translateY(-0.1rem); /* makes the button translate down 0.1rem when hovering over it */
+  transition: transform 15ms; /* makes the transformations occur over 15ms instead of an instant jump */ 
 }
 /* add when button is disabled then hover that has cursor not allowed, box-shadow none, transform none.  */
 .btn[disabled]:hover {    /* had to add `[]`*/
