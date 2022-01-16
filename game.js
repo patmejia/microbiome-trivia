@@ -164,9 +164,29 @@ getNewQuestion = () => {
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];    // selectedAnswer is a number
             getNewQuestion();
-        }
-    );
-});
-};
-// start game 
-startGame();
+        };
+getNewQuestion = () => {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        // go to the end page
+        return window.location.assign('end.html');
+    }
+        localStorage.setItem('mostRecentScore', score);
+        //go to the end page
+        return window.location.assign('end.html');
+    }
+    questionCounter++;
+    // randomly select a question and store it in currentQuestion variable
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    // remove the selected question from the availableQuestions array
+    availableQuestions.splice(questionIndex, 1);
+    // display the question
+    question.innerText = currentQuestion.question;
+    // for each choice in choices: choice addeventlistener click e to if accepting answer return then acceptAnswer() false: const seletetedchoice = e.target, const selectedAnswer = selectedchoice.dataset.answer Number, getquestions()
+    choices.forEach(choice => {
+        choice.addEventListener
+        ('click', e => {
+            if (!acceptingAnswers) return;
+            acceptingAnswers = false;
+            const selectedChoice = e.target;
+            const selectedAnswer = selectedChoice.dataset['number']
