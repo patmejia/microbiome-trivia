@@ -15,64 +15,30 @@
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <!-- add div class container -->
+    <!-- add class container
+     -->
     <div class="container">
-        <!-- add div for id "loader" -->
-        <div id="loader"></div>
-        <!-- add div for id "game" with class: justify center, flex column, hidden -->
-        <div id="game" class="justify-center flex-column hidden">
-            <!-- add div for id "hud" -->
-            <div id="hud">
-                <!-- add div for "hud-item" -->
-                <div id="hud-item">
-                    <!-- add parragrph with id "progressText" and class "hud-prefix" that says "Question" -->
-                    <p id="progressText" class="hud-prefix">Question</p>
-                    <!-- add div for "progressBar" -->
-                    <div id="progressBar">
-                        <!-- add id "progressBarFull"     -->
-                        <div id="progressBarFull"></div>
-                    </div>
-                </div>
-                <!-- add id "hud-item" for a parragraph that has class "hud-prefix" and the parragraph says "Score" -->
-                <div id="hud-item"> 
-                    <p class="hud-prefix">Score</p>
-                    <!-- add class "hud-main-text" and id "score" in h1-->
-                    <h1 id="score" class="hud-main-text">0</h1>
-                </div>
-            </div> <!-- end of hud div -->
-            <!-- in h2, add id "question" -->
-            <h2 id="question"></h2>
-            <!-- add class "choice-container"  -->
+        <!-- add id game, class justify center flex column -->
+        <div id="game" class="justify-center flex-column">
+            <!-- in h2, id questions that says Is the statement true or false? -->
+            <h2 id="questions">Is the statement true or false?</h2>
+            <!-- class choice container -->
             <div class="choice-container">
-                <!-- in parragraph, add class "choice-prefix" that says "A" -->
-                <p class="choice-prefix">A</p>
-                <!-- in p, add class "choice-text" that is  data-number "1" -->
-                <p class="choice-text" data-number="1"></p>
-            </div>  <!-- end of choice-container div -->
-            <!-- add class "choice-container"  -->
+                <!-- in p, class choice-prefix A -->
+                <p class="choice-prefix">A.</p>
+                <!-- in p, class choice-text, data-number 1 that says Choice 1 -->
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <!-- class choice container -->
             <div class="choice-container">
-                <!-- in parragraph, add class "choice-prefix" that says "B" -->
-                <p class="choice-prefix">B</p>
-                <!-- in p, add class "choice-text" that is  data-number "2" -->
-                <p class="choice-text" data-number="2"></p>
-            </div>  <!-- end of choice-container div -->
-            <!-- add class "choice-container"  -->
-            <div class="choice-container">
-                <!-- in parragraph, add class "choice-prefix" that says "C" -->
-                <p class="choice-prefix">C</p>
-                <!-- in p, add class "choice-text" that is  data-number "3" -->
-                <p class="choice-text" data-number="3"></p>
-            </div>  <!-- end of choice-container div -->
-            <!-- add class "choice-container"  -->
-            <div class="choice-container">
-                <!-- in parragraph, add class "choice-prefix" that says "D" -->
-                <p class="choice-prefix">D</p>
-                <!-- in p, add class "choice-text" that is  data-number "4" -->
-                <p class="choice-text" data-number="4"></p>
-            </div>  <!-- end of choice-container div -->
-        </div> <!-- end of game div -->
-    </div> <!-- end of container div -->
-    <!-- in script, add game.js  -->
+                <!-- in p, class choice-prefix B -->
+                <p class="choice-prefix">B.</p>
+                <!-- in p, class choice-text, data-number 2 that says Choice 2 -->
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>       
+        </div>     <!--  end of game div -->
+    </div>     <!-- end of container div -->
+    <!-- add link to game.js -->
     <script src="game.js"></script>
-</body> 
+</body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <!-- add meta tag for apple  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- add favicon for all browser types -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Gut Trivia</title>
+    <!-- add link to app.css -->
+    <link rel="stylesheet" href="app.css">
+    <!-- add link to game.css  -->
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- add div class container -->
+    <div class="container">
+        <!-- add div for id "loader" -->
+        <div id="loader"></div>
+        <!-- add div for id "game" with class: justify center, flex column, hidden -->
+        <div id="game" class="justify-center flex-column hidden">
+            <!-- add div for id "hud" -->
+            <div id="hud">
+                <!-- add div for "hud-item" -->
+                <div id="hud-item">
+                    <!-- add parragrph with id "progressText" and class "hud-prefix" that says "Question" -->
+                    <p id="progressText" class="hud-prefix">Question</p>
+                    <!-- add div for "progressBar" -->
+                    <div id="progressBar">
+                        <!-- add id "progressBarFull"     -->
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <!-- add id "hud-item" for a parragraph that has class "hud-prefix" and the parragraph says "Score" -->
+                <div id="hud-item"> 
+                    <p class="hud-prefix">Score</p>
+                    <!-- add class "hud-main-text" and id "score" in h1-->
+                    <h1 id="score" class="hud-main-text">0</h1>
+                </div>
+            </div> <!-- end of hud div -->
+            <!-- in h2, add id "question" -->
+            <h2 id="question"></h2>
+            <!-- add class "choice-container"  -->
+            <div class="choice-container">
+                <!-- in parragraph, add class "choice-prefix" that says "A" -->
+                <p class="choice-prefix">A</p>
+                <!-- in p, add class "choice-text" that is  data-number "1" -->
+                <p class="choice-text" data-number="1"></p>
+            </div>  <!-- end of choice-container div -->
+            <!-- add class "choice-container"  -->
+            <div class="choice-container">
+                <!-- in parragraph, add class "choice-prefix" that says "B" -->
+                <p class="choice-prefix">B</p>
+                <!-- in p, add class "choice-text" that is  data-number "2" -->
+                <p class="choice-text" data-number="2"></p>
+            </div>  <!-- end of choice-container div -->
+            <!-- add class "choice-container"  -->
+            <div class="choice-container">
+                <!-- in parragraph, add class "choice-prefix" that says "C" -->
+                <p class="choice-prefix">C</p>
+                <!-- in p, add class "choice-text" that is  data-number "3" -->
+                <p class="choice-text" data-number="3"></p>
+            </div>  <!-- end of choice-container div -->
+            <!-- add class "choice-container"  -->
+            <div class="choice-container">
+                <!-- in parragraph, add class "choice-prefix" that says "D" -->
+                <p class="choice-prefix">D</p>
+                <!-- in p, add class "choice-text" that is  data-number "4" -->
+                <p class="choice-text" data-number="4"></p>
+            </div>  <!-- end of choice-container div -->
+        </div> <!-- end of game div -->
+    </div> <!-- end of container div -->
+    <!-- in script, add game.js  -->
+    <script src="game.js"></script>
+</body> 
+</html>
