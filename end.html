@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- add meta tag for phone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add meta tag for apple  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- add favicon for all browser types -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Congrats!</title>
+    <!-- add link to app.css -->
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!-- add class container  -->
+    <div class="container">
+        <!-- add id end, class flex-center flex-column -->
+        <div id="end" class="flex-center flex-column">
+            <h1>id="finalScore"</h1>
+            <!-- add form tag -->
+            <form>
+                <!-- add input with: type text, name username, id username, placeholder username  -->
+                <input type="text" name="username" id="username" placeholder="username">
+            />
+            add button: type submitt, calss btn, id saveScoreBtn, onclick saveHighScore(event), disabled 
+            <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+<!-- in link, use clasee btn to link game.html that says Play Again         -->
+            <a href="game.html" class="btn">Play Again</a>
+            <!-- in link, use clasee btn to link highscores.html that says High Scores         -->
+            <a href="highscores.html" class="btn">High Scores</a>
+            <!-- in link, use class btn to link "/" that says Go Home -->
+            <a href="/" class="btn">Go Home</a>
+        </div>  <!-- end div id="end" -->
+    </div>  <!-- end div class="container" -->
+    <!-- link to end.js -->
+    <script src="end.js"></script>
+</body>
+</html>
+<!-- Path: end.html -->
