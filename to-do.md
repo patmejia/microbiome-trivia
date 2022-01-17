@@ -5,11 +5,14 @@
 2. quick spelling update on game.js
 ##
 #
-### *pending...*
-3. fix Head's Up Display (HUD)
-## 
-#
 
+3. fix Head's Up Display (HUD)
+    - fixed progress bar so it updates with each submitted answer
+#
+### *pending...*
+ - fix score so it updates with each submitted answer
+##
+#
 # To-do:
 
 - add questions to `questions.json`
