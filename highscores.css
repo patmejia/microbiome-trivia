@@ -1,0 +1,15 @@
+/* add '#highScoresList that has: list style none, padding left 0, margin bottom 4rem' */
+.highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+/* add high-score that has: font size 2.8rem, marginbottom .5rem  */
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: .5rem;
+}
+/* add .high-score hover that transforms at scale 1.025 */
+.high-score:hover {
+  transform: scale(1.025);
+}
