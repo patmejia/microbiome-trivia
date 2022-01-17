@@ -37,7 +37,7 @@
 /* HUD */
 
 /* for hud use: display flex, justify-content space-between,  */
-.hud {
+#hud {       
   display: flex;
   justify-content: space-between;
 }
@@ -51,14 +51,14 @@
   text-align: center;
 }
 /* for progressBar use: width 20rem, height 4rem, morder .3rem solid #56a5eb, margin top 1.5rem */
-.progressBar {  
+#progressBar {  
   width: 20rem;
   height: 4rem;
   margin: .3rem solid #56a5eb;
   margin-top: 1.5rem;
 }   
 /* for progressBarFull use: width 0%, height 3.4rem, background-color #56a5eb */
-.progressBarFull {  /* make progressBarFull width 0% */
+#progressBarFull {  /* make progressBarFull width 0% */
   width: 0%;
   height: 3.4rem;
   background-color: #56a5eb;

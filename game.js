@@ -64,19 +64,19 @@ getNewQuestion = () => {
         return window.location.assign('end.html');  // go to end.html
     }
     questionCounter++;  // questionCounter is the number of questions
-    // questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;  // questionCounterText is the question counter text
-    // randomly select a question and store it in currentQuestion variable
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;  // question is the question text
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`; // progressText is the question counter
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`; // progressBarFull is the progress bar
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length); // questionIndex is the random question
+    currentQuestion = availableQuestions[questionIndex]; // currentQuestion is the random question
+    question.innerText = currentQuestion.question; // question is the question
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
-    availableQuestions.splice(questionIndex, 1);
+    availableQuestions.splice(questionIndex, 1); // remove the question from the availableQuestions array
     acceptingAnswers = true;
 };
-    // for each choice in choices: choice addeventlistener click e to if accepting answer return then acceptAnswer() false: const seletetedchoice = e.target, const selectedAnswer = selectedchoice.dataset.answer Number, getquestions()
+// add event listener to each choice: addEventListener 'click', (event) => {
     choices.forEach(choice => {
         choice.addEventListener
         ('click', e => {
