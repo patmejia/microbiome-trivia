@@ -29,7 +29,7 @@ let questions = [
         answer: 1
     },
     {
-        question: "TThe microbiota in the gut can be radically different from the microbiota that strives on the skin.",      // question 3
+        question: "The microbiota in the gut can be radically different from the microbiota that strives on the skin.",      // question 3
         choice1: "True",
         choice2: "False",
         answer: 1
@@ -80,19 +80,19 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         choice.addEventListener
         ('click', e => {
-            if (!acceptingAnswers) return;
-            acceptingAnswers = false;
+            if (!acceptingAnswers) return; 
+            acceptingAnswers = false; 
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
-            const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+            const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; // if selectedAnswer is equal to currentQuestion.answer then classToApply is correct else classToApply is incorrect
             // if (classToApply === 'correct') {
             //     incrementScore(CORRECT_BONUS);
             // }
-            selectedChoice.parentElement.classList.add(classToApply);   
+            selectedChoice.parentElement.classList.add(classToApply);       // add classToApply to the parent element of selectedChoice
             setTimeout(() => {
-                selectedChoice.parentElement.classList.remove(classToApply);    
+                selectedChoice.parentElement.classList.remove(classToApply);        // remove classToApply from the parent element of selectedChoice
                 getNewQuestion();
-            }, 1000);
+            }, 1000); 
         });     
     });     // end of choices.forEach()
     // add function incrementScore(number) that will add number to score and update the UI
