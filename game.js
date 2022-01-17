@@ -5,7 +5,7 @@
 // create constant progressBarFull: getelementbyid 'progressBarFull'
 // create constant loader: getelementbyid 'loader'
 
-const { constants } = require("buffer");   // import constants from buffer
+// const { constants } = require("buffer");   // import constants from buffer
 
 // create constant game: getelementbyid 'game'
 const question = document.getElementById('question');
@@ -59,12 +59,12 @@ startGame = () => {   // startGame() function
 // add if/then getNewQuestion() that will randomly select a question from availableQuestions and store it in currentQuestion variable.
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score); // set the most recent score to local storage
-        //go to the end page
+        // localStorage.setItem('mostRecentScore', score); // set the most recent score to local storage
+        // //go to the end page
         return window.location.assign('end.html');  // go to end.html
     }
     questionCounter++;  // questionCounter is the number of questions
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;  // questionCounterText is the question counter text
+    // questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;  // questionCounterText is the question counter text
     // randomly select a question and store it in currentQuestion variable
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -85,20 +85,20 @@ getNewQuestion = () => {
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
             const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-            if (classToApply === 'correct') {
-                incrementScore(CORRECT_BONUS);
-            }
+            // if (classToApply === 'correct') {
+            //     incrementScore(CORRECT_BONUS);
+            // }
             selectedChoice.parentElement.classList.add(classToApply);   
             setTimeout(() => {
                 selectedChoice.parentElement.classList.remove(classToApply);    
                 getNewQuestion();
             }, 1000);
-        });
-    });
-// incrementScore 
-incrementScore = num => {
-    score += num;
-    scoreText.innerText = score;
-};
-// startGame();
-startGame();
+        });     
+    });     // end of choices.forEach()
+    // add function incrementScore(number) that will add number to score and update the UI
+    // incrementScore = num => {
+    //     score += num;
+    //     scoreText.innerText = score;
+    // };
+    // start game when page loads
+    startGame();
