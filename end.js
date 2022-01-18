@@ -7,7 +7,7 @@
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');           
 const finalScore = document.getElementById('finalScore');
-const mostRecentScore = document.getElementById('mostRecentScore');
+const mostRecentScore = localStorage.getItem('mostRecentScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];    // if highScores is null, set to empty array
 const MAX_HIGH_SCORES = 5;  // max number of high scores to keep
 // make innetText finalScore = mostRecentScore

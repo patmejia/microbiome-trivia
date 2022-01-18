@@ -59,7 +59,7 @@ startGame = () => {   // startGame() function
 // add if/then getNewQuestion() that will randomly select a question from availableQuestions and store it in currentQuestion variable.
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        // localStorage.setItem('mostRecentScore', score); // set the most recent score to local storage
+        localStorage.setItem('mostRecentScore', score); // set the most recent score to local storage
         // //go to the end page
         return window.location.assign('end.html');  // go to end.html
     }
@@ -84,10 +84,10 @@ getNewQuestion = () => {
             acceptingAnswers = false; 
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
-            const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; // if selectedAnswer is equal to currentQuestion.answer then classToApply is correct else classToApply is incorrect
-            // if (classToApply === 'correct') {
-            //     incrementScore(CORRECT_BONUS);
-            // }
+            const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; 
+            if (classToApply === 'correct') {   // if classToApply is correct
+                incrementScore(CORRECT_BONUS);  // increment score by CORRECT_BONUS
+            }
             selectedChoice.parentElement.classList.add(classToApply);       // add classToApply to the parent element of selectedChoice
             setTimeout(() => {
                 selectedChoice.parentElement.classList.remove(classToApply);        // remove classToApply from the parent element of selectedChoice
@@ -96,9 +96,9 @@ getNewQuestion = () => {
         });     
     });     // end of choices.forEach()
     // add function incrementScore(number) that will add number to score and update the UI
-    // incrementScore = num => {
-    //     score += num;
-    //     scoreText.innerText = score;
-    // };
+    incrementScore = num => {
+        score += num;
+        scoreText.innerText = score;
+    };
     // start game when page loads
     startGame();

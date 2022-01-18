@@ -56,6 +56,7 @@
   height: 4rem;
   margin: .3rem solid #56a5eb;
   margin-top: 1.5rem;
+  border: 0.3rem solid #56a5eb ;
 }   
 /* for progressBarFull use: width 0%, height 3.4rem, background-color #56a5eb */
 #progressBarFull {  /* make progressBarFull width 0% */
