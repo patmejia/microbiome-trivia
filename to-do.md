@@ -10,11 +10,15 @@
 6. Display Final Score on the end page. Also, update end webpage to display save button: `id="saveScoreBtn"`
 
 7. Enabled form to save username and user's highscore. Then it show panel of all highscores (also enables the highscore btn)
+
+8. High Score btn working to display webpage `highscore.html`. Users with highest socres updates correctly.
+
+
+
+9. Make a simple website that serves, fetchs questions from `questions.json`
+
 # To-do:
 ### *pending...*
-- add questions to `questions.json`
 - update text style of questions
-- fix display of final score
-- debug highscore css, js and htlm
-- store to local and display
-- fix l in after save user's score is submitted.
+- fix display, style of question font so that i fits in most smallest width (and height) properly fitted.
+9. Move questions from `game.js` to `questions.json`. Fecth questions from `.json` and display.
