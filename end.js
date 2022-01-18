@@ -15,18 +15,17 @@ const MAX_HIGH_SCORES = 5;  // max number of high scores to keep
 finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => { // add event listener to username
     saveScoreBtn.disabled = !username.value;    // if username is not empty, enable saveScoreBtn
-    }
-);
+});
 // create function saveHighScore with parameter score and username 
 saveHighScore = (e) => {    // e is event
     e.preventDefault();   // prevent default behavior of form submit (refresh page) 
     const score = {
-        score: mostRecentScore.innerText,
+        score: mostRecentScore,
         name: username.value
     };
     highScores.push(score);
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(5);
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('index.html');
+    window.location.assign('/');
 };
