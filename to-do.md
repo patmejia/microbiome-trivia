@@ -13,11 +13,13 @@
 
 8. High Score btn working to display webpage `highscore.html`. Users with highest socres updates correctly.
 
+9. Finish displaying rest of questions as hard code. Do not use `.json` for now,
 
-
-9. Make a simple website that serves, fetchs questions from `questions.json`
+10. Calibrate HUD display, scores, and score panel makes sense.
 
 # To-do:
+### *pending...*
+9. Make a simple website that serves, fetchs questions from `questions.json`
 ### *pending...*
 - update text style of questions
 - fix display, style of question font so that i fits in most smallest width (and height) properly fitted.

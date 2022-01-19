@@ -10,13 +10,11 @@ const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];    // if highScores is null, set to empty array
 const MAX_HIGH_SCORES = 5;  // max number of high scores to keep
-// make innetText finalScore = mostRecentScore
-// mostRecentScore.innerText = finalScore.innerText;
+
 finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => { // add event listener to username
     saveScoreBtn.disabled = !username.value;    // if username is not empty, enable saveScoreBtn
 });
-// create function saveHighScore with parameter score and username 
 saveHighScore = (e) => {    // e is event
     e.preventDefault();   // prevent default behavior of form submit (refresh page) 
     const score = {

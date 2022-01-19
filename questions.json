@@ -1,20 +1,18 @@
-[
-    {
-        "question": "A microbiome is the collection of genomes of all the microorganisms found in a particular environment. Some examples are all the bacteria, fungi, protozoa, and viruses that live on and inside the human body microbiome.",        // question 1
-        "choice1": "True",
-        "choice2": "False",
-        "answer": 1
-    },
-    {
-        "question": "The microbiota in the gut can be radically different from the microbiota that strives on the skin.",      // question 3
-        "choice1": "True",
-        "choice2": "False",
-        "answer": 1
-    },
-    {
-        "question": "The human body is, in fact, a “supraorganism”: a collection of human and microbial cells and genes. And thus, a blend of human and microbial traits.",     // question 5
-        "choice1": "True",
-        "choice2": "False",
-        "answer": 1
-    }
-]
+{
+    "question": "A microbiome is the collection of genomes of all the microorganisms found in a particular environment. Some examples are all the bacteria, fungi, protozoa, and viruses that live on and inside the human body microbiome.",
+    "choice1": "True",
+    "choice2": "False",
+    "answer": 1
+},
+{
+    "question": "The microbiome in the gut can be radically different from the microbiota that strives on the skin.",
+    "choice1": "True",
+    "choice2": "False",
+    "answer": 1
+},
+{
+    "question": "The human body is, in fact, a “supraorganism”: a collection of human and microbial cells and genes. And thus, a blend of human and microbial traits.",
+    "choice1": "True",
+    "choice2": "False",
+    "answer": 1
+}
