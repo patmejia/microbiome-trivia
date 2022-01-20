@@ -1,0 +1,79 @@
+// need to add json proper format: quotes around the words: question, choice1, choice2 and answer
+
+MULTIPLE_CHOICE_QUESTIONS = [
+    {
+        question: "A microbiome is the collection of genomes of all the microorganisms found in a particular environment. Some examples are all the bacteria, fungi, protozoa, and viruses that live on and inside the human body microbiome. ",        // question 1
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+    {
+        question: "In humans, the largest microbiome is the gut, particularly the large intestine.",        // question 2 
+        choice1: "False",
+        choice2: "True",
+        answer: 2
+    },
+    {
+        question: "The human body is a “supraorganism”: a collection of human and microbial cells and genes.",     // question 3
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+    {
+        question: "Bacteria are, by far, the most numerous members of the human microbiome. The bacterial population alone is estimated between 75 to 200 trillion, while the entire somatic (body) cells are estimated between 50 to 100 trillion.",       // question 4
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+
+    },
+    {
+        question: "The bacteria in the microbiome help digest our food, regulate our immune system, protect against other bacteria that cause disease, and produce vitamins including B vitamins B12, thiamine and riboflavin, and Vitamin K, which is needed for blood coagulation.",      // question 5
+        choice1: "False",
+        choice2: "True",
+        answer: 2
+    },
+    { 
+        question: "Type I diabetes is an autoimmune disease associated with a less diverse gut microbiome. In animal studies, bacteria play a role in developing diabetes.",   // question 6
+        choice1: "False",
+        choice2: "True",
+        answer: 2
+        
+    },
+    {
+        question: "The gut microbiome is different between obese and lean twins. Obese twins have a lower diversity of bacteria, and higher levels of enzymes, meaning the obese twins are more efficient at digesting food and harvesting calories. Obesity has also been associated with a poor combination of microbes in the gut.",     // question 7
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+    {
+        question: "The gut microbiome is different between obese and lean twins. Obese twins have a lower diversity of bacteria, and higher levels of enzymes, meaning the obese twins are more efficient at digesting food and harvesting calories. Obesity has also been associated with a poor combination of microbes in the gut.",   // question 8
+        choice1: "False",
+        choice2: "True",
+        answer: 2
+    },
+    {
+        question: "Autoimmune diseases such as diabetes, rheumatoid arthritis, muscular dystrophy, multiple sclerosis, and fibromyalgia are associated with dysfunction in the microbiome. ",   // question 9
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+    {
+        question: "In unhealthy microbiomes, disease-causing microbes accumulate over time, changing gene activity and metabolic processes and resulting in an abnormal immune response against substances and tissues normally present in the body. ",   // question 10
+        choice1: "False",
+        choice2: "True",
+        answer: 2
+    },
+    {
+        question: "Autoimmune diseases appear to be passed in families not by DNA inheritance but by inheriting the family microbiome.",    // question 11
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+    {
+        question: "Humans can restore their microbiome by eating lots of vegetables, legumes, beans, and fruits. Many fruits and vegetables are high in fiber. Fiber promotes the growth of beneficial gut bacteria, including specific types such as Bifidobacteria.",     // question 12
+        choice1: "True",
+        choice2: "False",
+        answer: 1
+    },
+]
+

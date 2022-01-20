@@ -14,13 +14,18 @@
 8. High Score btn working to display webpage `highscore.html`. Users with highest socres updates correctly.
 
 9. Finish displaying rest of questions as hard code. Do not use `.json` for now,
-
+    - use question maker and grammarly to reduce questions and wordiness.
 10. Calibrate HUD display, scores, and score panel makes sense.
+
+11. add style to questions `question-container` so that they fit in mobile view and update text style of questions to bold certain text
 
 # To-do:
 ### *pending...*
+
+- add all google search tags realted to gut, microbiome, health, weight loss, and diet -->
+
 9. Make a simple website that serves, fetchs questions from `questions.json`
 ### *pending...*
-- update text style of questions
+
 - fix display, style of question font so that i fits in most smallest width (and height) properly fitted.
 9. Move questions from `game.js` to `questions.json`. Fecth questions from `.json` and display.
