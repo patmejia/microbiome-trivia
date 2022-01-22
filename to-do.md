@@ -19,9 +19,10 @@
 
 11. add style to questions `question-container` so that they fit in mobile view and update text style of questions to bold certain text
 
+
 # To-do:
 ### *pending...*
-
+- fix high score view for the phone
 - add all google search tags realted to gut, microbiome, health, weight loss, and diet -->
 
 9. Make a simple website that serves, fetchs questions from `questions.json`
