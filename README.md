@@ -1,5 +1,5 @@
 # Trivia Game
-[Link to Trivia game: here](https://patree-code.github.io/microbiome-trivia/)
+[Link to Trivia game: here](https://navpati.github.io/microbiome-trivia/)
 Shows how to use HTML, CSS and JS only to create a quiz form.
 
 # Some Concepts
