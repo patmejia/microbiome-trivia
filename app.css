@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 /* add style to h1: font size 5.4rem, color light blue, bottom margin 5rem */
 h1 {
   font-size: 5.4rem;
-  color: #56a5eb;   /*  copilot miss  */              
+  color: #56a5eb;               
   margin-bottom: 5rem;
 }
 /* add span element to h1 that has font-size 2.4rem and font-weight 500 */
