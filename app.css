@@ -43,7 +43,7 @@ h3 {
 
 /* add a container: width 100vw, height 100vh, that has display flex, justify-content: center, align-items: center, max width 80rem, amrgin 0 auto, padding 2rem, */
 .container {
-  width: 100vw; /*  copilot miss  */
+  width: 100vw; 
   height: 100vh;
   display: flex;
   justify-content: center;
