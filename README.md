@@ -2,6 +2,8 @@
 [Link to Trivia game: here](https://mejia-code.github.io/microbiome-trivia/)
 Shows how to use HTML, CSS and JS only to create a quiz form.
 
+[wip: fix save highscores]*
+
 # Some Concepts
 
 Definition and Usage
